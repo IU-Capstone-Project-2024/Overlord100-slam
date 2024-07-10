@@ -1,11 +1,10 @@
 # Overlord100-slam
 
-
 - To launch without visualizer
 
 ```bash
 
-ros2launchros2_laser_scan_mergermerge_2_scan.launch.py
+ros2 launch ros2_laser_scan_merger merge_2_scan.launch.py
 
 ```
 
@@ -13,6 +12,6 @@ ros2launchros2_laser_scan_mergermerge_2_scan.launch.py
 
 ```bash
 
-ros2launchros2_laser_scan_mergervisualize_merge_2_scan.launch.py
+ros2 launch ros2_laser_scan_merger visualize_merge_2_scan.launch.py
 
 ```
