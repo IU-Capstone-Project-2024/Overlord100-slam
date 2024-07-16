@@ -1,15 +1,15 @@
 # Overlord100-slam
 **Building a Map**
-
-1. **Launch the URDF Dummy Robot:**
+ **First build the package**
    ```bash
-   ros2 launch urdf_dummy sim_custom_controller.launch.py
+   colcon build --packages-select overlord100_slam --symlink-install
    ```
-2. **Launch scan merger and slam toolbox:**
+ **Launch scan merger and slam toolbox:**
    ```bash
-   ros2 launch overlord100_slam/launch/slam_launch.py
+   ros2 launch overlord100_slam slam_launch.launch.py
    ```
-3. **Save the Map:**
+   
+ **Save the Map:**
    ```bash
    ros2 run nav2_map_server map_saver_cli -f <map_name>
    ```
