@@ -9,7 +9,11 @@
    ```bash
    ros2 launch overlord100_slam slam_launch.launch.py
    ```
-   
+
+  **To launch with rviz**
+  ```bash
+   ros2 launch overlord100_slam slam_launch.launch.py rviz:=True
+   ```
  **Save the Map:**
    ```bash
    ros2 run nav2_map_server map_saver_cli -f <map_name>
